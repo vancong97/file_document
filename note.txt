@@ -1,0 +1,357 @@
+	Copy Image CNV vào Folder + P:\2.IT\2.DATA_2022\0.Employee picture 2022\2.TVN_Pictures
+			  	  + \\pd491\DATA_Public\CNV Mới
+				  + Backup: \\172.30.134.54\Backup_Svr\1.File Server_Storage\DATA_2020\PUBLIC\13.HRGA_DongAnh\3.Data_2020\6.Other\Employee list  picture 2020\Pictures 2020\2. TVN_Pictures
+					Admin/P@ssw0rd
+
+
+
+	Nhận được yêu cầu bộ phận thiếu dữ liệu.
+				+ Vào phần mêm->chọn tất cả máy(vào mục máy chấm công)->chọn recover-> logdata->Atten->save text ->vào C:\Program Files (x86)\Fujitsu Vietnam Limited\KEIO\Logs\GLog-> xóa những ngày không cần thiết->kéo thả vao phần mềm rồi chạy.
+
+
+ 	Đẩy dữ liệu vân tay về máy chấm công.
+				+ B1 cho máy mình đã lấy vân tay các bạn về máy mẫu(Sample)
+				+ B2 Vào mục Vân tay-> Receice->Load->copy(Manv)->Clipboard Filter->Receive hoặc Receice->điền mã nhân viên->Load->Receive 
+				+ B3 Vào Enroll->chọn máy cần đầy vân tay vê(vd:locknam)->Load->Clipboard Filter->Enroll (đẩy về máy chấm)
+	active máy chấm công mới.
+				+vào TA Machine ->chọn đến máy cần active system->license->browser->active(A.Tung)
+	xóa vân tay ở máy chấm công cũ.
+        			+View-> chọn máy chấm công chưa dl cần xóa-> copy manv->load->delete
+P:\13.HR&GA_Donganh\3.Data_2020\1.General affairs\2. Ban hang noi bo\Form mẫu
+Q:\14.Data_2020\5.IT\1.IT_Đông Anh\2. Device Managerment\5. Finger Managerment
+Q:\14.Data_2020\5.IT\1.IT_Đông Anh\1.IT Policy report, task,targer, regulation\11.Horenso_Soft(team)
+Q:\15.Data_2021\5.IT\1.IT_Đông Anh\8. Software _Development
+Q:\15.Data_2021\5.IT\1.IT_Đông Anh\8. Software _Development\3. Dự án đăng ký xe ra ngoài & OT\Database (đường dẫn import)
+Luu file: \\172.30.134.12\IT
+quan ly van tay: \\172.30.134.12\it\2.Data_2021\1.Infra_DongAnh\2. Device Managerment\5. Finger Managerment
+
+software: \\172.30.134.12\it\2.Data_2021\3.Sotware_Dev
+
+Định hướng phần mềm Hậu comment:
+1. Group người đăng ký sẽ tự động được link theo cấp bậc và phòng ban (Nghĩa là giữa group có mỗi quan hệ với bảng rank và bảng department)
+   Khi update người dùng sang vị trí và phòng ban khác luồng phê duyệt group đăng ký sẽ tự động được update theo
+2. Việc tạo group thứ 3 là cha của n group còn lại ( nghĩa là bạn có 1 group MG, 1 group DGM bây giờ bạn muốn tạo ra 1 group có cả MG, DGM, hiện tại đang phải tạo 1 group thứ 3 và add user của nhóm MG, DGM vào)
+   Điều này sẽ hữu ích khi bạn phải add 100 người vào group thứ 3 thì bạn chỉ cần tạo ra 1 group thứ 3 và phân cho nó là cha của 2 group MG, DGM và sẽ giảm được việc 1 user phải add ở nhiều group, giờ chỉ cần add 1 user ở 1 group
+   công việc còn lại là gom các nhóm lại.
+Thủy HR comment:
+- Link phòng ban với group nhóm phê duyệt sau khi thay đổi người sang phòng ban khác luồng sẽ tự động được update theo
+
+
+1. Trước khi có sự thay đổi trên môi trường thật phải test trước trên môi trường thử, đảm bảo việc test thành công.
+2. Trước khi nâng cấp phần mềm cần phải backup hệ thống cũ.
+3. Luôn duy trì việc backup dữ liệu hàng ngày.
+
+Giới thiệu về nền tảng em đang làm
+Cách thiêt lập để phần mềm nghỉ phép
+Và quản trị pm này hạn 5/6
+Khi bị thiếu dữ liệu
+1. get dữ liệu bình thường -> sau đó chị Hạnh sẽ lấy ra 1 bản dữ liệu chuẩn (từ ngày nào đến ngày nào)
+2. sau đó nhận yêu cầu lấy lại dữ liệu (từ ngày nào thiếu đến ngày nào thiếu)
+mục đích so sanh bản dữ liệu trước khi nhận yêu cầu lấy lại và dữ liệu sau khi lấy lại
+kết quả : nếu giống nhau thì sau không phải lấy lại nữa
+          nếu khác sau lấy lại
+$2y$10$DXLIaaDpIimlVbcrAVf/3e.2xzCimhhgYX4Xl7FkhCsn3l/v3GQF2
+<VirtualHost *:80>
+    ##ServerName comm-app.local
+    DocumentRoot "C:/xampp/htdocs/ids"
+    ##SetEnv APPLICATION_ENV "development"
+    <Directory "C:/xampp/htdocs/ids">
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
+// Duyệt mảng dùng forEach
+arr.forEach((item, index) => {
+    // TODO
+})
+
+// Duyệt mảng dùng for...of (nếu bên trong có xử lý bất đồng bộ)
+for (const item of arr) {
+    await something()
+}
+
+// Tạo mảng mới với giá trị từ mảng cũ (không làm thay đổi mảng cũ, React cực kì hay dùng)
+// Ví dụ: tạo mảng mới có các phần tử với giá trị được x2 so với mảng cũ
+const arr = [1,2,3]
+const newArray = arr.map(item => item * 2)
+console.log(newArray)
+
+// Lọc mảng với điều kiện
+const arr = [1,2,3,1]
+const newArray = arr.filter(item => {
+    if (item === 1) { return item }
+})
+console.log(newArray)
+
+// nối mảng
+const arr1 = [1,2,3]
+const arr2 = [4,5,6]
+const arr3 = [...arr1, ...arr2]
+console.log(arr3)
+
+// lấy ra một thuộc tính trong object
+const { email, address } = user
+console.log(email, address)
+
+// Copy object/mảng (React rất hay dùng)
+const obj = { name: 'my name' }
+const clone = { ...obj }
+console.log(obj === clone)
+
+https://tutorialzine.com/misc/files/example.json
+
+// khi dùng Promise
+axios.get('/users')
+.then(response => {
+    console.log(response)
+    
+    console.log(test) // `test` chưa khai báo, nhưng Promise không bắt được lỗi
+})
+.catch(error => {
+    console.log(error) // không trả về lỗi biến `test` ở đây
+})
+
+// dùng `async/await`
+async function test () {
+    try {
+        const users = await axios.get('/users')
+        
+        const addresses = await axios.get('/addresses')
+        
+        console.log(test) // `test` chưa được khai báo
+    } catch (error) {
+        console.log(error) // trả về  "test is undefined..."
+    }
+}
+Remove Object from an Array by its Value (Xóa đối tượng khỏi một mảng theo giá trị của nó).
+const arr = [{id: 1}, {id: 3}, {id: 5}];
+
+const indexOfObject = arr.findIndex(object => {
+  return object.id === 3;
+});
+
+console.log(indexOfObject); // 👉️ 1
+
+arr.splice(indexOfObject, 1);
+
+console.log(arr); 
+
+const arr = [{id: 1}, {id: 3}, {id: 5}];
+
+const newArr = arr.filter(object => {
+  return object.id !== 3;
+});
+
+console.log(newArr) // 👉️ [{id: 1}, {id: 5}]
+
+From an array of objects, extract value of a property as array (Từ một mảng đối tượng, trích xuất giá trị của một thuộc tính dưới dạng mảng)
+let inputArray = [
+  { id: 1, name: "name1", value: "value1" },
+  { id: 2, name: "name2", value: "value2" },
+];
+
+let ids = inputArray.map( (item) => item.id);
+let names = inputArray.map((item) => item.name);
+let values = inputArray.map((item) => item.value);
+
+console.log(ids);
+console.log(names);
+console.log(values);
+
+// How to call reduce on an array of objects to sum their properties? Làm thế nào để gọi giảm trên một mảng các đối tượng để tính tổng các thuộc tính của chúng?
+var arr = [{x:1},{x:2},{x:4}];
+
+arr.reduce(function (a, b) {
+  return {x: a.x + b.x}; // returns object with property x
+})
+
+// ES6
+arr.reduce((a, b) => ({x: a.x + b.x}));
+const result = arr.reduce( ( sum, { x } ) => sum + x , 0)
+
+// -> {x: 7}
+[1, 2, 3].reduce((x, y) => x + y);
+[{ age: 5 }, { age: 2 }, { age: 8 }]
+  .reduce((total, thing) => total + thing.age, 0);
+
+const myArray = [{ id: 1, value: 10}, { id: 2, value: 20}];
+hoăc dùng map const values = myArray.map(obj => obj.value); // values = [10, 20]; sau đó dùng reduct const sum = values.reduce((accumulator, currentValue) => { return accumulator + currentValue; } , 0);
+
+//Tìm và thay thế 1 key trong mảng nhiều object (dùng cho trường hợp thay thế 1 value trong 1 object)
+const data = [{
+    "id": 1,
+    "name": "January",
+    "abc": "abc",
+    "xyz": "xyz"
+}, {
+    "id": 2,
+    "name": "February",
+    "abc": "abc",
+    "xyz": "xyz"
+}];
+
+const element = data.find(el => el.id === 2)
+element.xyz = "WHATERVER"
+console.log(data)
+
+const client = {
+  "profiles": {
+    "gravetender": {
+      "musicTokens": 2
+    },
+    "Bob-chan": {
+      "musicTokens": 3
+    }
+  }
+}
+
+Object.values(client.profiles).forEach(profile => {
+  profile.musicTokens = 5
+})
+
+console.log(client.profiles) (thay thế tất cả value trong tất cả object)
+
+//them 1 key vao object in array
+const list = [ { a : 'a', b : 'b' } , { a : 'a2' , b : 'b2' }]
+
+console.log(list.map(item => item.c = 'c'))
+// [ 'c', 'c' ]
+
+console.log(list.map(item => {item.c = 'c'; return item;}))
+// [ { a: 'a', b: 'b', c: 'c' }, { a: 'a2', b: 'b2', c: 'c' } ]
+
+console.log(list.map(item => Object.assign({}, item, { c : 'c'})))
+// [ { a: 'a', b: 'b', c: 'c' }, { a: 'a2', b: 'b2', c: 'c' } ]
+
+// Lấy phần tử cuối cùng trong object
+var obj = { 'a' : 'apple', 'b' : 'banana', 'c' : 'carrot' };
+var last = Object.keys(obj).pop();
+console.log(last);
+console.log(obj[last]);
+=> c
+=> carrot
+
+//check giá trị trùng lặp trong một mảng đối tượng JavaScript
+var family = [{ name: "Mike", age: 10 }, { name: "Matt", age: 13 }, { name: "Nancy", age: 15 }, { name: "Adam", age: 22 }, { name: "Jenny", age: 85 }, { name: "Nancy", age: 2 }, { name: "Carl", age: 40 }],
+    unique = family.filter((set => f => !set.has(f.name) && set.add(f.name))(new Set));
+
+console.log(unique);
+[
+  {
+    "name": "Mike",
+    "age": 10
+  },
+  {
+    "name": "Matt",
+    "age": 13
+  },
+  {
+    "name": "Nancy",
+    "age": 15
+  },
+  {
+    "name": "Adam",
+    "age": 22
+  },
+  {
+    "name": "Jenny",
+    "age": 85
+  },
+  {
+    "name": "Carl",
+    "age": 40
+  }
+]
+
+const obj = {
+  name: 'James',
+  country: 'Chile',
+};
+
+// 👇️ ['name', 'country']
+console.log(Object.keys(obj));
+
+const result = Object.keys(obj).map(key => {
+  console.log(key); // 👉️ name, country
+  console.log(obj[key]); // 👉️ James, Chile
+
+  return {[key]: obj[key]};
+});
+
+// 👇️ [{name: 'James'}, {country: 'Chile'}]
+console.log(result);
+
+//Return duplicate objects in array of large data using JavaScript
+const myArray = [
+    { 'id': 111, 'lorem': 'ipsum' },
+    { 'id': 222, 'lorem': 'dorem' },
+    { 'id': 111, 'lorem': 'polus' },
+    { 'id': 111, 'lorem': 'waifu' },
+];
+const uniqueItems = new Set();
+const duplicates = [];
+myArray.forEach(
+  function(a) {
+    if (uniqueItems.has(a.id)) {
+      duplicates.push(a);
+    }
+    uniqueItems.add(a.id);
+   }
+);
+console.log("duplicates",duplicates);
+console.log("uniqueItems",uniqueItems);
+
+//Get list of duplicate objects in an array of objects
+const values = [{id: 10, name: 'someName1'}, {id: 10, name: 'someName2'}, {id: 11, name:'someName3'}, {id: 12, name: 'someName4'}];
+
+const lookup = values.reduce((a, e) => {
+  a[e.id] = ++a[e.id] || 0;
+  return a;
+}, {});
+
+console.log(values.filter(e => lookup[e.id]));
+
+bảng điều kiện
++ điều kiện để dừng luồng ( có thể tùy chỉnh điều kiện)
++ nút dừng của luồng (mỗi group sẽ 1 tính chất của luồng)
+
+docker run --rm -v "/$(pwd)":/app -w //app composer install --ignore-platform-reqs
+docker run --rm -v "/$(pwd)":/app -w //app composer:1.9.1 dump-autoload --classmap-authoritative --no-dev --optimize
+
+docker run --rm -v "/$(pwd)":/app -w //app node:13-alpine npm install --production
+
+docker run --rm -v "/$(pwd)":/app -w //app node:13-alpine npm run prod
+
+install docker on windown server 2016
+1. Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force ; Install-Module -Name Az -Force
+2. Install-Module -Name DockerMsftProvider -Force
+3. Install-Package -Name docker -ProviderName DockerMsftProvider -Force
+4. Restart-Computer -Force
+5. docker version
+
+Install docker-compose on windown server
+1. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+2. Invoke-WebRequest "https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-Windows-x86_64.exe" -UseBasicParsing -OutFile $Env:ProgramFiles\Docker\docker-compose.exe
+3. docker-compose --version
+C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks
+Flow Git
+1. Đứng ở nhánh đang code
+2. git add .
+3. git commit
+4. git chckout master
+5. git pull 
+6. git checkout sang nhánh đang làm
+7. git rebase master
+8. nếu có conflict thì fix rồi push code
+* git stash pop, git log, git reflog, git rebase --abort, git reset --soft
+* git remote remove origin
+* git remote add origin git@github.com:tvnsoft/meas-app.git (add origin ssh)
+* git clone https://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@github.com/tvnsoft/btas-app.git
+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 05-05-2023
+git reset --soft a8e6893
+git reset --hard HEAD
+P:\13.HR&GA_Donganh\6.Data_2023\3.Recruit & Education management\1. Quản lý tuyển dụng\8. Hồ sơ ứng viên các phòng ban
+Tvn@2022 139.120
